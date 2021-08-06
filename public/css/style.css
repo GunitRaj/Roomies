@@ -1,0 +1,45 @@
+.cavalier{
+   color: navy
+}
+
+.white{
+   color: white
+}
+ 
+.cavalierbackground{
+   background-color: navy
+}
+
+.inputs{
+ margin-left: auto;
+ margin-right: auto;
+ padding: 10px;
+}
+ 
+.cavalier-blue{
+   color:#325aa8;
+   font-weight: bold
+}
+ 
+.cavalier-orange{
+   background-color: orange
+}
+
+.black {
+    color: black
+}
+
+.button {
+    background-color: orange
+}
+
+.underline {
+    text-decoration: underline
+}
+
+.border {
+    border:3px; 
+    border-style:double;
+    padding: 1em;
+    border-width: thick;
+}

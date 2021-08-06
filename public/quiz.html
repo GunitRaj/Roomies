@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Roomies Quiz</title>
+ 
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+   <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+   <link rel = "stylesheet" href = "css/style.css"/>
+       <!-- update the version number as needed -->
+   <script defer src="/__/firebase/8.3.1/firebase-app.js"></script>
+   <!-- include only the Firebase features as you need -->
+   <script defer src="/__/firebase/8.3.1/firebase-auth.js"></script>
+   <script defer src="/__/firebase/8.3.1/firebase-database.js"></script>
+   <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+   <script defer src="js/profile.js"></script>
+ </head>
+ <body>
+     <h1 class = "title is-size-1 has-text-centered cavalier-blue" id = "quiz_welcome">The Roomies Quiz</h1>
+<div class = "columns is-centered">
+   <div class = "column is-full">
+   <div class="content has-text-centered inputs">
+     <p class = "cavalier-blue">What is your name?</p>
+     <input class="input is-small" type="text" id="profile_name" placeholder="name">
+     </div>
+   <div class = "content has-text-centered inputs">
+       <p class = "cavalier-blue">Insert Image URL</p>
+       <input class = "input is-small" type = "text" id="profile_picture" placeholder="image url">   
+   </div>
+   <div class = "content has-text-centered inputs">
+       <p class = "cavalier-blue">Instagram</p>
+       <input class = "input is-small" type = "text" id = "user_instagram" placeholder="instagram">
+   </div>
+    <div class = "content has-text-centered inputs">
+       <p class = "cavalier-blue">Snapchat</p>
+       <input class = "input is-small" type = "text" id = "user_snapchat" placeholder="snapchat">
+   </div>
+   <div class = "content has-text-centered inputs">
+     <p class = "cavalier-blue"> What is your gender?</p>
+     <input type="radio" id="female" name="gender" value="Female">
+     <label for="female">Female</label><br>
+     <input type="radio" id="male" name="gender" value="Male">
+     <label for="male">Male</label><br>
+     <input type="radio" id="non-binary" name="gender" value="Non-Binary">
+     <label for="non-binary">Non-Binary</label><br>
+   </div>
+   <div class = "content has-text-centered inputs">
+      <p class = "cavalier-blue"> What Year Are You In?</p>
+      <input type="radio" id="firstyear" name="year" value="First Year">
+      <label for="first-year">First Year</label><br>
+      <input type="radio" id="secondyear" name="year" value="Second Year">
+      <label for="second-year">Second Year</label><br>
+      <input type="radio" id="thirdyear" name="year" value="Third Year">
+      <label for="third-year">Third Year</label><br>
+      <input type="radio" id="fourthyear" name="year" value="Fourth Year">
+      <label for="fourth-year">Fourth Year</label><br>
+ </div>
+ <div class = "content has-text-centered inputs">
+     <p class = "cavalier-blue"> What is Your Personality Type?</p>
+     <input type="radio" id="extro" name="personality" value="Extrovert">
+     <label for="extrovert">Extrovert</label><br>
+     <input type="radio" id="intro" name="personality" value="Introvert">
+     <label for="introvert">Introvert</label><br>
+     <input type="radio" id="ambi" name="personality" value="Ambivert">
+     <label for="ambivert">Ambivert</label><br>
+ </div>
+ 
+ <div class = "content has-text-centered inputs">
+     <p class = "cavalier-blue"> Are You An Early Bird or Night Owl? </p>
+     <input type = "radio" id = "night" name = "sleep" value = "Night Owl">
+     <label for = "nightowl">Night Owl</label>
+     <input type = "radio" id = "early" name = "sleep" value = "Early Bird">
+     <label for = "earlybird">Early Bird</label>
+ </div>
+ 
+ <div class = "content has-text-centered inputs">
+     <p class = "cavalier-blue"> What Best Describes You? </p>
+     <input type = "radio" id = "gym" name = "describe" value = "Gym Junkie">
+     <label for = "nightowl">Gym Junkie</label>
+     <input type = "radio" id = "game" name = "describe" value = "Gamer">
+     <label for = "gamer">Gamer</label>
+     <input type = "radio" id = "fir" name = "describe" value = "Fitness Fanatic">
+     <label for = "fitnessfanatic">Fitness Fanatic</label>
+     <input type = "radio" id = "art" name = "describe" value = "Artist">
+     <label for = "artist">Artist</label>
+     <input type = "radio" id = "code" name = "describe" value = "Coder">
+     <label for = "coder">Coder</label>  
+ </div>
+  <div class = "content has-text-centered">
+ <!--<button class="button is-success" onclick = "handleQuizSubmit(); profilePage(); redirect();"</button>Submit</button> -->
+ <button class = "button is-medium cavalier-orange" onclick= "profilePage(); handleQuizSubmit(); redirect();">Submit</button>
+ </div>
+ </div>
+</div>
+ </body>
+ </html>
